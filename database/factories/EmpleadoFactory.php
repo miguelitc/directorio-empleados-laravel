@@ -23,7 +23,7 @@ class EmpleadoFactory extends Factory
             'apellidos' => fake()->lastName() . ' ' . fake()->lastName(),
             'correo' => fake()->unique()->safeEmail(),
             'puesto' => fake()->randomElement(['Desarrollador', 'Diseñador', 'Gerente', 'Soporte Técnico', 'Analista']),
-            'salario' => fake()->randomFloat(2, 10000, 50000), // Decimales, mínimo y máximo
+            'salario' => fake()->randomFloat(2, 10000, 50000),
         ];
     }
 }
